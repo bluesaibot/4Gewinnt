@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerGame">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background_cave.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="gridPane" gridLinesVisible="true" layoutX="237.0" layoutY="110.0" prefHeight="441.0" prefWidth="550.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label fx:id="labelTurn" alignment="CENTER" layoutX="150.0" layoutY="30.0" prefHeight="40.0" prefWidth="245.0" text="Turn:" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSpalte1" layoutX="237.0" onMouseClicked="#labelSpalte1OnMouseClick" prefHeight="592.0" prefWidth="79.0" />
+      <Label fx:id="labelSpalte2" layoutX="316.0" onMouseClicked="#labelSpalte2OnMouseClick" prefHeight="598.0" prefWidth="79.0" />
+      <Label fx:id="labelSpalte3" layoutX="395.0" onMouseClicked="#labelSpalte3OnMouseClick" prefHeight="598.0" prefWidth="79.0" />
+      <Label fx:id="labelSpalte4" layoutX="473.0" layoutY="5.0" onMouseClicked="#labelSpalte4OnMouseClick" prefHeight="598.0" prefWidth="79.0" />
+      <Label fx:id="labelSpalte5" layoutX="552.0" onMouseClicked="#labelSpalte5OnMouseClick" prefHeight="598.0" prefWidth="79.0" />
+      <Label fx:id="labelSpalte6" layoutX="643.0" onMouseClicked="#labelSpalte6OnMouseClick" prefHeight="598.0" prefWidth="79.0" />
+      <Label fx:id="labelSpalte7" layoutX="722.0" layoutY="-2.0" onMouseClicked="#labelSpalte7OnMouseClick" prefHeight="598.0" prefWidth="79.0" />
+      <Label fx:id="labelRemainingStones" alignment="CENTER" layoutX="500.0" layoutY="30.0" prefHeight="46.0" prefWidth="325.0" text="Remaining Stones: 21" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

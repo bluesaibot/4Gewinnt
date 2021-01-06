@@ -1,0 +1,25 @@
+#buttonExit, #buttonSelectNames, #buttonPvP, #buttonShowWinner, #buttonConfirm {
+    -fx-background-color: transparent;
+    /*-fx-background-color: rgb(110, 110, 110);
+    -fx-border-style: solid;
+    -fx-border-color: black;*/
+}
+
+#buttonExit:hover, #buttonSelectNames:hover, #buttonPvP:hover {
+    -fx-text-fill: #e6e6e6;
+    -fx-background-color: transparent;
+    -fx-font-size: 235%;
+    /*-fx-background-color: #494949;*/
+}
+
+#buttonConfirm:hover {
+    -fx-font-size: 350%;
+}
+
+#comboBoxPlayer1, #comboBoxPlayer2 {
+    -fx-background-color: white;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-font-size: 150%;
+    -fx-opacity: 30%;
+}

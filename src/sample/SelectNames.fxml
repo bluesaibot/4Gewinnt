@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerGame">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="1215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background_selectNames.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="382.0" text="Player 1" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldPlayer1" layoutX="14.0" layoutY="219.0" prefHeight="25.0" prefWidth="384.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="755.0" layoutY="382.0" text="Player 2" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldPlayer2" layoutX="626.0" layoutY="219.0" prefHeight="25.0" prefWidth="384.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonConfirm" layoutX="384.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#buttonConfirmedOnMouseClicked" prefHeight="86.0" prefWidth="256.0" text="Confirm" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboBoxPlayer1" layoutX="88.0" layoutY="313.0" prefHeight="35.0" prefWidth="237.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList" fx:id="observableArrayList">
+               <String fx:id="coal1" fx:value="Coal Ore" />
+               <String fx:id="iron1" fx:value="Iron Ore" />
+               <String fx:id="gold1" fx:value="Gold Ore" />
+               <String fx:id="diamond1" fx:value="Diamond Ore" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ComboBox fx:id="comboBoxPlayer2" layoutX="700.0" layoutY="313.0" prefHeight="35.0" prefWidth="237.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:id="coal2" fx:value="Coal Ore" />
+               <String fx:id="iron2" fx:value="Iron Ore" />
+               <String fx:id="gold2" fx:value="Gold Ore" />
+               <String fx:id="diamond2" fx:value="Diamond Ore" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+   </children>
+</AnchorPane>

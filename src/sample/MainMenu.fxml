@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerGame">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="1081.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background_finished.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonExit" alignment="BASELINE_LEFT" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#buttonExitOnMouseClicked" prefHeight="54.0" prefWidth="549.0" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="buttonSelectNames" alignment="BASELINE_LEFT" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#buttonSelectNamesOnMouseClicked" prefHeight="52.0" prefWidth="549.0" text="Select Names" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="buttonPvP" alignment="BASELINE_LEFT" contentDisplay="TEXT_ONLY" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#buttonPvPOnMouseClicked" prefHeight="54.0" prefWidth="549.0" text="Player VS Player" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
